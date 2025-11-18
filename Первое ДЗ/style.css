@@ -1,0 +1,25 @@
+h1 {
+	margin: auto;
+	width: 2100px;
+	font-size: 80px;
+	color: rgb(62, 62, 62);
+}
+p {
+	margin: auto;
+	width: 2100px;
+	font-size: 30px;
+}
+h2 {
+	margin: auto;
+	width: 2100px;
+	font-size: 45px;
+	color: rgb(62, 62, 62);
+}
+li {
+	margin: auto;
+	width: 2100px;
+	font-size: 30px;
+}
+img {
+	margin: auto;
+}
