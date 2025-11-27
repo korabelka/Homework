@@ -1,0 +1,96 @@
+@font-face {
+	font-family: Oswald;
+	src: url("./font.css/OswaldSemiBold.woff2") format("woff2"), font-display: swap;
+}
+
+html {
+	font-family: Ubuntu;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+.article {
+	margin-top: 80px;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.tittle-h1 {
+	margin-bottom: 40px;
+	max-width: 596px;
+	font-size: 48px;
+	font-weight: 600;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+	color: #2c332f;
+	line-height: 115%;
+}
+.article-text {
+	margin-bottom: 20px;
+	font-weight: 400;
+	line-height: 130%;
+	font-size: 16px;
+	color: #535755;
+}
+
+.img {
+	max-width: 1220px;
+	max-height: 512px;
+	margin: 80px 0;
+}
+
+.tittle-h2 {
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+	margin-bottom: 40px;
+	font-family: Oswald;
+}
+
+.list {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	padding-left: 16px;
+	margin-bottom: 80px;
+	color: #2c332f;
+}
+
+.gym-video {
+	margin-bottom: 40px;
+}
+
+.article-text-final {
+	margin-bottom: 120px;
+	font-weight: 400;
+	line-height: 130%;
+	font-size: 16px;
+	color: #535755;
+}
+
+.final {
+	margin: 0;
+	max-width: 2560px;
+	height: 302px;
+	display: inline-block;
+ 	background: linear-gradient(90deg, rgba(73, 169, 255, 0.2) 0%, rgba(252, 124, 217, 0.2) 100%);
+}
+
+.logo {
+	width: 80px;
+	height: 45px;
+	margin: 60px 1240px 40px;
+}
