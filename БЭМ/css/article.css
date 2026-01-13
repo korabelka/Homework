@@ -1,0 +1,154 @@
+.article {
+	margin-top: 80px;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.article__tittle {
+	margin-bottom: 40px;
+	max-width: 596px;
+	font-size: 48px;
+	font-weight: 600;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+	color: #2c332f;
+	line-height: 115%;
+}
+
+.tittle__h2 {
+	font-size: 36px;
+}
+
+.article__text {
+	margin-bottom: 20px;
+	font-weight: 400;
+	line-height: 130%;
+	font-size: 16px;
+	color: #535755;
+}
+
+.article__text--1 {
+	margin-bottom: 80px;
+}
+
+.article__decor--1 {
+	position: relative;
+}
+
+.article__decor--1::before {
+	top: 100px;
+	left: 0;
+}
+
+.article__decor--2 {
+	position: relative;
+}
+
+.article__decor--2::before {
+	right: -350px;
+	bottom: 136px;
+}
+
+.img-1 {
+	margin-bottom: 80px;
+}
+
+.article__play--button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 0px;
+	background-color: #3596ed;
+	border: none;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.article__play--button:hover {
+	background-color: #49aaff;
+}
+
+.article__play--button:active {
+	background-color: #287eca;
+}
+
+.list {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	padding-left: 16px;
+	margin-bottom: 80px;
+	color: #2c332f;
+}
+
+.list__item::marker {
+	color: #0202c8;
+	font-size: 22px;
+}
+
+.article__text--final {
+	margin-top: 40px;
+	margin-bottom: 120px;
+	font-weight: 400;
+	line-height: 130%;
+	font-size: 16px;
+	color: #535755;
+}
+
+.flex__container {
+	display: block;
+	position: absolute;
+	left: 30%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 60px;
+	color: #535755;
+	margin-top: 145px;
+	padding-bottom: 40px;
+	border-bottom: solid #d3cbd9 1px;
+}
+
+@media (width <= 768px) {
+	.article__decor::before {
+		display: none;
+	}
+}
+
+@media (width <= 576px) {
+	.article {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
+
+	.article__play--button {
+		width: 50px;
+		height: 50px;
+	}
+
+	.article__play--button img {
+		width: 18px;
+		height: 18px;
+	}
+}
