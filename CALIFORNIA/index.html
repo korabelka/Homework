@@ -1,0 +1,711 @@
+<!doctype html>
+<html class="page" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./icons/California-favicon.ico"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+		<script defer src="./js/index.js" type="module"></script>
+		<title>CALIFORNIA - Electronics Store</title>
+	</head>
+	<body class="page__body">
+		<header class="header">
+			<div class="header__container">
+				<a href="#">
+					<svg width="170" height="21">
+						<use
+							class="header__logo"
+							href="./icons/header-sprite.svg#logo"
+						></use>
+					</svg>
+				</a>
+				<nav
+					id="header__menu"
+					class="header__nav header__menu"
+					aria-label="Main menu"
+				>
+					<a href="#" class="menu__link text-little">ALL PRODUCTS</a>
+					<div class="dropdown" tabindex="0">
+						<span class="menu__link text text-little dropdown__toggle">
+							SOLUTIONS <span class="arrow-down">&#9662;</span>
+						</span>
+						<ul class="dropdown__menu">
+							<li><a href="#" class="dropdown__item">Contact with us</a></li>
+							<li><a href="#" class="dropdown__item">Support</a></li>
+							<li><a href="#" class="dropdown__item">Prices</a></li>
+							<li>
+								<a href="#" class="dropdown__item">Return of the product</a>
+							</li>
+							<li><a href="#" class="dropdown__item">Reviews</a></li>
+						</ul>
+					</div>
+					<a href="#" class="menu__link text text-little">ABOUT</a>
+					<a href="#" class="menu__link text text-little">SUPPORT</a>
+				</nav>
+				<div class="header__icons">
+					<button
+						class="header__icon-btn header__icon-search-btn"
+						title="Search"
+						aria-label="Search"
+					>
+						<svg width="24" height="24">
+							<use
+								class="header__icon-search"
+								href="./icons/header-sprite-icon.svg#search"
+							></use>
+						</svg>
+					</button>
+					<button class="header__icon-btn" title="Cart" aria-label="Cart">
+						<svg width="24" height="24">
+							<use
+								class="header__icon-cart"
+								href="./icons/header-sprite-icon.svg#cart"
+							></use>
+						</svg>
+					</button>
+					<button
+						class="header__burger burger"
+						title="Open menu"
+						aria-label="Open menu"
+						aria-expanded="false"
+						aria-controls="header__menu"
+					>
+						<svg width="24" height="24">
+							<use
+								class="burger__icon-menu"
+								href="./icons/header-sprite-icon.svg#burger"
+							></use>
+							<use
+								class="burger__icon-cross"
+								href="./icons/header-sprite-icon.svg#cross"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<section class="hero">
+			<div class="container hero__container">
+				<button
+					class="product__slider-button product__slider-button--prev"
+					aria-label="Предыдущий слайд"
+				>
+					<svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+						<path
+							d="M15 18L9 12L15 6"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</button>
+				<div class="hero__slider">
+					<div class="hero__track">
+						<div class="hero__content">
+							<div class="hero__content-text">
+								<h1 class="hero__title">
+									The new phones are here take a look.
+								</h1>
+								<p class="text hero__text text-big">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+								<a href="#" class="hero__btn">Explore</a>
+							</div>
+							<div class="hero__image">
+								<picture>
+									<source srcset="./images/hero/iphone13.webp" />
+									<img
+										class="hero__img"
+										src="./images/hero/iphone13.png"
+										alt="Слайд 1"
+								/></picture>
+							</div>
+						</div>
+						<div class="hero__content">
+							<div class="hero__content-text">
+								<h1 class="hero__title">Powerful performance every day.</h1>
+								<p class="text hero__text text-big">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+								<a href="#" class="hero__btn">Explore</a>
+							</div>
+							<div class="hero__image">
+								<picture>
+									<source srcset="./images/hero/iphone13.webp" />
+									<img
+										class="hero__img"
+										src="./images/hero/iphone13.png"
+										alt="Слайд 2"
+								/></picture>
+							</div>
+						</div>
+						<div class="hero__content">
+							<div class="hero__content-text">
+								<h1 class="hero__title">Capture moments in detail.</h1>
+								<p class="text hero__text text-big">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+								<a href="#" class="hero__btn">Explore</a>
+							</div>
+							<div class="hero__image">
+								<picture>
+									<source srcset="./images/hero/iphone13.webp" />
+									<img
+										class="hero__img"
+										src="./images/hero/iphone13.png"
+										alt="Слайд 3"
+								/></picture>
+							</div>
+						</div>
+						<div class="hero__content">
+							<div class="hero__content-text">
+								<h1 class="hero__title">Designed for the future.</h1>
+								<p class="text hero__text text-big">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								</p>
+								<a href="#" class="hero__btn">Explore</a>
+							</div>
+							<div class="hero__image">
+								<picture>
+									<source srcset="./images/hero/iphone13.webp" />
+									<img
+										class="hero__img"
+										src="./images/hero/iphone13.png"
+										alt="Слайд 4"
+								/></picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button
+					class="product__slider-button product__slider-button--next"
+					aria-label="Следующий слайд"
+				>
+					<svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+						<path
+							d="M9 6L15 12L9 18"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						/>
+					</svg>
+				</button>
+			</div>
+			<footer class="hero__footer">
+				<div class="solid active"></div>
+				<div class="solid"></div>
+				<div class="solid"></div>
+				<div class="solid"></div>
+			</footer>
+		</section>
+		<section class="categories">
+			<div class="categories__container">
+				<h2 class="categories__title">Shop our latest offers and categories</h2>
+				<p class="categories__subtitle text-little">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+					in est dui, aliquam, tempor. Faucibus morbi turpis. Lorem ipsum dolor
+					sit amet, consectetur adipiscing elit.
+				</p>
+				<div class="categories__grid">
+					<div class="categories__card categories__card--laptops">
+						<picture>
+							<source
+								srcset="./images/categories/laptop.webp"
+								type="image/webp"
+							/>
+							<img
+								class="laptop__img"
+								src="./images/categories/laptop.png"
+								width="500"
+								height="377"
+								alt="Открытый ноутбук"
+							/>
+						</picture>
+						<div class="categories__card-info categories__card-info--left">
+							<span class="categories__card-label">Laptops</span>
+							<h3 class="categories__card-title">True Laptop<br />Solution</h3>
+						</div>
+					</div>
+					<div class="categories__card categories__card--phones">
+						<div class="categories__card-image">
+							<picture>
+								<source
+									srcset="./images/categories/phones.webp"
+									type="image/webp"
+								/>
+								<img
+									class="phones__img"
+									src="./images/categories/phones.png"
+									width="405"
+									height="367"
+									alt="два телефона"
+								/>
+							</picture>
+						</div>
+						<div class="categories__card-info categories__card-info--center">
+							<span class="categories__card-label">Phones</span>
+							<h3 class="categories__card-title">Your day to day<br />life</h3>
+						</div>
+					</div>
+					<div class="categories__card categories__card--tablet">
+						<div class="categories__card-info categories__card-info--right">
+							<span class="categories__card-label">Tablet</span>
+							<h3 class="categories__card-title">Empower your<br />work</h3>
+						</div>
+						<div class="categories__card-image">
+							<picture>
+								<source
+									srcset="./images/categories/tablet.webp"
+									type="image/webp"
+								/>
+								<img
+									class="tablet__img"
+									src="./images/categories/tablet.png"
+									width="311"
+									height="561"
+									alt="Планшет лежащий в руке"
+								/>
+							</picture>
+						</div>
+					</div>
+					<div class="categories__card categories__card--watch">
+						<div class="categories__card-image">
+							<picture>
+								<source
+									srcset="./images/categories/watch.webp"
+									type="image/webp"
+								/>
+								<img
+									class="watch__img"
+									src="./images/categories/watch.png"
+									width="381"
+									height="270"
+									alt="Часы с фиолетовым ремешком"
+								/>
+							</picture>
+						</div>
+						<div
+							class="categories__card-info categories__card-info--left-bottom"
+						>
+							<span class="categories__card-label">Watch</span>
+							<h3 class="categories__card-title">Not just<br />stylisht</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bestsellers">
+			<div class="bestsellers__container">
+				<h2 class="bestsellers__title">Save on our most selled items.</h2>
+				<p class="bestsellers__subtitle">
+					Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+				</p>
+				<div class="bestsellers__grid">
+					<div class="bestsellers__card">
+						<div class="bestsellers__card-image">
+							<picture>
+								<source
+									srcset="./images/bestsellers/MacBookPro13.webp"
+									type="image/webp"
+								/>
+								<img
+									class="MacBookPro13"
+									src="./images/bestsellers/MacBookPro13.png"
+									width="247"
+									height="214"
+									alt="Открытый ноутбук Mac Book Pro 13"
+								/>
+							</picture>
+						</div>
+						<h3 class="bestsellers__card-name">MacBook Pro 13</h3>
+						<p class="bestsellers__card-desc">
+							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+						</p>
+						<p class="bestsellers__card-price">$ 1,200.00 USD</p>
+					</div>
+					<div class="bestsellers__card">
+						<div class="bestsellers__card-image">
+							<picture>
+								<source
+									srcset="./images/bestsellers/SmartGalaxyWatch3.webp"
+									type="image/webp"
+								/>
+								<img
+									class="SmartGalaxyWatch3"
+									src="./images/bestsellers/SmartGalaxyWatch3.png"
+									width="247"
+									height="214"
+									alt="Часы Smart Galaxy Watch 3 с черным ремешком"
+								/>
+							</picture>
+						</div>
+						<h3 class="bestsellers__card-name">Smart Galaxy Watch 3</h3>
+						<p class="bestsellers__card-desc">
+							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+							consectetur, adipisci velit...
+						</p>
+						<p class="bestsellers__card-price">$ 199.00 USD</p>
+					</div>
+					<div class="bestsellers__card">
+						<div class="bestsellers__card-image">
+							<picture>
+								<source
+									srcset="./images/bestsellers/MacBookAirM1.webp"
+									type="image/webp"
+								/>
+								<img
+									class="MacBookAirM1"
+									src="./images/bestsellers/MacBookAirM1.png"
+									width="247"
+									height="214"
+									alt="Открытый ноутбук Mac Book Air M1"
+								/>
+							</picture>
+						</div>
+						<h3 class="bestsellers__card-name">MacBook Air M1</h3>
+						<p class="bestsellers__card-desc">
+							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+							consectetur, adipisci velit...
+						</p>
+						<p class="bestsellers__card-price">$ 1,009.00 USD</p>
+					</div>
+					<div class="bestsellers__card">
+						<div class="bestsellers__card-image">
+							<picture>
+								<source
+									srcset="./images/bestsellers/iPad.webp"
+									type="image/webp"
+								/>
+								<img
+									class="iPad"
+									src="./images/bestsellers/iPad.png"
+									width="247"
+									height="214"
+									alt="Открытый ноутбук Mac Book Air M1"
+								/>
+							</picture>
+						</div>
+						<h3 class="bestsellers__card-name">iPad</h3>
+						<p class="bestsellers__card-desc">
+							Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+							consectetur, adipisci velit...
+						</p>
+						<p class="bestsellers__card-price">$ 610.00 USD</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="explore">
+			<div class="explore__container">
+				<h2 class="explore__title">See the best around here</h2>
+				<p class="explore__subtitle">
+					Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+				</p>
+				<div class="explore__grid">
+					<div class="explore__card">
+						<div class="explore__card-content">
+							<span class="explore__card-label">Smart light bulb pack</span>
+							<h3 class="explore__card-title">Latest and gratest</h3>
+							<a href="#" class="explore__card-btn">Explore</a>
+						</div>
+						<div class="explore__card-image">
+							<picture>
+								<source
+									srcset="./images/Explore/Latest.webp"
+									type="image/webp"
+								/>
+								<img
+									class="latest__img"
+									src="./images/Explore/Latest.png"
+									width="259"
+									height="250"
+									alt="Пара часов розвого и зеленого цвета"
+								/>
+							</picture>
+						</div>
+					</div>
+					<div class="explore__card">
+						<div class="explore__card-content">
+							<span class="explore__card-label">Smart light bulb pack</span>
+							<h3 class="explore__card-title">Best selling</h3>
+							<a href="#" class="explore__card-btn">Explore</a>
+						</div>
+						<div class="explore__card-image">
+							<picture>
+								<source
+									srcset="./images/Explore/BestSelling.webp"
+									type="image/webp"
+								/>
+								<img
+									class="BestSelling__img"
+									src="./images/Explore/BestSelling.png"
+									width="294"
+									height="250"
+									alt="Ноутбук из которого вылетают 2 телефона и часы"
+								/>
+							</picture>
+						</div>
+					</div>
+					<div class="explore__card">
+						<div class="explore__card-content">
+							<span class="explore__card-label">Smart light bulb pack</span>
+							<h3 class="explore__card-title">Every product</h3>
+							<a href="#" class="explore__card-btn">Explore</a>
+						</div>
+						<div class="explore__card-image">
+							<picture>
+								<source
+									srcset="./images/Explore/EveryProduct.webp"
+									type="image/webp"
+								/>
+								<img
+									class="EveryProduct__img"
+									src="./images/Explore/EveryProduct.png"
+									width="355"
+									height="250"
+									alt="Ноутбук сзади которого телефон"
+								/>
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ideas">
+			<div class="ideas__container">
+				<h2 class="ideas__title">Ideas have a place here</h2>
+				<p class="ideas__subtitle">
+					Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+				</p>
+				<div class="ideas__content">
+					<div class="ideas__image">
+						<picture>
+							<source srcset="./images/ideas.webp" type="image/webp" />
+							<img
+								class="book__img"
+								src="./images/ideas.png"
+								width="620"
+								height="420"
+								alt="Открытая книга с иллюстрациями"
+							/>
+						</picture>
+					</div>
+					<div class="ideas__faq">
+						<div class="ideas__faq-item">
+							<input type="checkbox" id="faq-1" class="ideas__faq-toggle" />
+							<label for="faq-1" class="ideas__faq-question">
+								<span
+									>We Make It Easy To Find The Great Design Talent,
+									Easier...</span
+								>
+								<span class="ideas__faq-icon"></span>
+							</label>
+							<div class="ideas__faq-answer">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Repudiandae tempore cum tempora natus amet soluta dolorem
+									ratione excepturi obcaecati deleniti sapiente nulla corporis
+									fugiat eius ducimus totam hic ipsam, quibusdam nam, magnam
+									impedit accusamus! Labore.
+								</p>
+							</div>
+						</div>
+						<div class="ideas__faq-item">
+							<input type="checkbox" id="faq-2" class="ideas__faq-toggle" />
+							<label for="faq-2" class="ideas__faq-question">
+								<span>Road Design Handbook For The International Road...</span>
+								<span class="ideas__faq-icon"></span>
+							</label>
+							<div class="ideas__faq-answer">
+								<p>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Explicabo nisi reiciendis doloribus aut, numquam temporibus
+									ipsam accusantium excepturi dolorum, illum aliquam odio
+									sapiente omnis alias facilis praesentium magni optio suscipit
+									sit molestias ex labore! Accusantium aperiam cum unde rerum
+									vero.
+								</p>
+							</div>
+						</div>
+						<div class="ideas__faq-item">
+							<input type="checkbox" id="faq-3" class="ideas__faq-toggle" />
+							<label for="faq-3" class="ideas__faq-question">
+								<span>The Best Kept Secrets About Creative People</span>
+								<span class="ideas__faq-icon"></span>
+							</label>
+							<div class="ideas__faq-answer">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Voluptatibus dignissimos expedita laboriosam perferendis
+									tempora excepturi sequi voluptas, maxime ab qui necessitatibus
+									blanditiis provident aut. Dicta sunt quibusdam quisquam labore
+									harum iusto!
+								</p>
+							</div>
+						</div>
+						<div class="ideas__faq-item">
+							<input type="checkbox" id="faq-4" class="ideas__faq-toggle" />
+							<label for="faq-4" class="ideas__faq-question">
+								<span
+									>We Make It Easy To Find The Great Design Talent,
+									Easier...</span
+								>
+								<span class="ideas__faq-icon"></span>
+							</label>
+							<div class="ideas__faq-answer">
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Magnam officiis voluptatem esse aliquam perferendis ipsa
+									velit, quae animi vel quam minima delectus molestiae maiores
+									quaerat aperiam dicta?
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="ideas__see-all">See All ↗</a>
+			</div>
+		</section>
+		<section class="search-section">
+			<div class="search-section__container">
+				<h2 class="search-section__title">Looking for anything else?</h2>
+				<div class="search-section__bar">
+					<svg width="30" height="30">
+						<use href="./icons/search.svg"></use>
+					</svg>
+					<input
+						type="text"
+						class="search-section__input"
+						placeholder="Search"
+					/>
+				</div>
+				<div class="search-section__tags">
+					<a href="#" class="search-section__tag">iPhone</a>
+					<a href="#" class="search-section__tag">Charger</a>
+					<a href="#" class="search-section__tag">Gift</a>
+					<a href="#" class="search-section__tag">Google Pixel 3</a>
+					<a href="#" class="search-section__tag">Keyboard</a>
+					<a href="#" class="search-section__tag">13 Pro Max</a>
+					<a href="#" class="search-section__tag">iPhone 12</a>
+					<a href="#" class="search-section__tag">Laptop</a>
+					<a href="#" class="search-section__tag">Mobile</a>
+				</div>
+			</div>
+		</section>
+		<section class="newsletter">
+			<div class="newsletter__container">
+				<div class="newsletter__box">
+					<h2 class="newsletter__title">Never miss a thing</h2>
+					<p class="newsletter__desc">
+						Sign up for texts to be notified about our best offers on the
+						perfect gifts.
+					</p>
+					<picture>
+						<source srcset="./images/newsletter.webp" type="image/webp" />
+						<img
+							class="newsletter__img"
+							src="./images/newsletter.png"
+							width="233"
+							height="200"
+							alt="Ноутбук с вылетающими из него смартфонами и часами"
+						/>
+					</picture>
+					<div class="newsletter__form">
+						<input
+							type="email"
+							class="newsletter__input"
+							placeholder="Your email"
+						/>
+						<button class="newsletter__btn">Sign up</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top">
+					<div class="footer__brand">
+						<a href="#">
+							<svg width="170" height="21">
+								<use
+									class="footer__logo"
+									href="./icons/header-sprite.svg#logo"
+								></use>
+							</svg>
+						</a>
+						<p class="footer__brand-text">
+							Sign up for texts to be notified about our best offers on the
+							perfect gifts.
+						</p>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__column-title">All products</h4>
+						<a href="#" class="footer__link">Phones</a>
+						<a href="#" class="footer__link">Watch</a>
+						<a href="#" class="footer__link">Tablet</a>
+						<a href="#" class="footer__link">Laptops</a>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__column-title">Company</h4>
+						<a href="#" class="footer__link">About</a>
+						<a href="#" class="footer__link">Support</a>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__column-title">Support</h4>
+						<a href="#" class="footer__link">Style Guide</a>
+						<a href="#" class="footer__link">Licensing</a>
+						<a href="#" class="footer__link">Change Log</a>
+						<a href="#" class="footer__link">Contact</a>
+					</div>
+					<div class="footer__column">
+						<h4 class="footer__column-title">Follow Us</h4>
+						<a href="#" class="footer__link footer__link--instagram"
+							>Instagram</a
+						>
+						<a href="#" class="footer__link footer__link--facebook">Facebook</a>
+						<a href="#" class="footer__link footer__link--linkedin">Linkedin</a>
+						<a href="#" class="footer__link footer__link--youtube">Youtube</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="search-modal" aria-hidden="true">
+			<div class="search-modal__overlay" data-close></div>
+			<div
+				class="search-modal__content"
+				role="dialog"
+				aria-modal="true"
+				aria-label="Search"
+			>
+				<button
+					class="search-modal__close"
+					aria-label="Close search"
+					data-close
+				>
+					<svg width="24" height="24">
+						<use href="./icons/header-sprite-icon.svg#cross"></use>
+					</svg>
+				</button>
+
+				<form class="search-modal__form">
+					<svg class="search-modal__icon" width="24" height="24">
+						<use href="./icons/header-sprite-icon.svg#search"></use>
+					</svg>
+					<input
+						type="text"
+						class="search-modal__input"
+						placeholder="Search for products..."
+						autocomplete="off"
+					/>
+					<button type="submit" class="search-modal__submit">Search</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

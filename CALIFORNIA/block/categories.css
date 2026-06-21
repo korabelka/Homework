@@ -1,0 +1,278 @@
+.categories {
+	margin-bottom: 72px;
+}
+
+.categories__container {
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.categories__title {
+	font-family: var(--second-family);
+	font-size: clamp(26px, 3.2vw, 42px);
+	font-weight: 400;
+	margin-bottom: 9px;
+	line-height: 120%;
+}
+
+.categories__subtitle {
+	font-family: var(--second-family);
+	max-width: 628px;
+	margin: 0 auto 55px;
+}
+
+.categories__grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-rows: auto auto;
+	gap: 16px;
+}
+
+.categories__card {
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.categories__card:hover {
+	transform: scale(1.02);
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.categories__card--laptops {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	aspect-ratio: 639 / 472;
+}
+
+.categories__card--phones {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+	aspect-ratio: 312 / 792;
+}
+
+.categories__card--tablet {
+	grid-column: 3 / 4;
+	grid-row: 1 / 3;
+	aspect-ratio: 312 / 792;
+}
+
+.categories__card--watch {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	aspect-ratio: 639 / 270;
+}
+
+.categories__card-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.laptop__img {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-55%);
+	width: 80%;
+	height: auto;
+}
+
+.phones__img {
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 85%;
+	height: auto;
+}
+
+.tablet__img {
+	position: absolute;
+	bottom: -2%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 70%;
+	height: auto;
+}
+
+.watch__img {
+	position: absolute;
+	bottom: 50%;
+	left: 25%;
+	transform: translate(-50%, 50%);
+	width: 60%;
+	height: auto;
+}
+
+.categories__card-info {
+	position: absolute;
+	z-index: 2;
+}
+
+.categories__card-label {
+	font-size: 15px;
+	text-transform: capitalize;
+	display: block;
+}
+
+.categories__card-title {
+	font-family: var(--second-family);
+	font-size: clamp(20px, 2.4vw, 32px);
+	font-weight: 400;
+	line-height: 120%;
+}
+
+.categories__card-info--left {
+	bottom: 30px;
+	right: 30px;
+	text-align: right;
+}
+
+.categories__card-info--left-bottom {
+	top: 90px;
+	right: 30px;
+	text-align: right;
+}
+
+.categories__card-info--center {
+	bottom: 140px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+}
+
+.categories__card-info--right {
+	top: 12%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	width: 100%;
+}
+
+@media (max-width: 1024px) {
+	.categories {
+		margin-bottom: 80px;
+	}
+
+	.categories__subtitle {
+		margin-bottom: 40px;
+	}
+
+	.categories__grid {
+		gap: 12px;
+	}
+
+	.categories__card-info--left,
+	.categories__card-info--left-bottom {
+		right: 18px;
+		bottom: 18px;
+	}
+
+	.categories__card-info--left-bottom {
+		top: 60px;
+		bottom: auto;
+	}
+}
+
+@media (max-width: 640px) {
+	.categories {
+		margin-bottom: 60px;
+	}
+
+	.categories__container {
+		padding: 0 16px;
+	}
+
+	.categories__subtitle {
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+
+	.categories__grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 16px;
+	}
+
+	.categories__card--laptops,
+	.categories__card--phones,
+	.categories__card--tablet,
+	.categories__card--watch {
+		grid-column: 1 / -1;
+		grid-row: auto;
+		aspect-ratio: 16 / 10;
+	}
+
+	.categories__card--phones,
+	.categories__card--tablet {
+		aspect-ratio: 16 / 12;
+	}
+
+	.laptop__img {
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0;
+		transform: none;
+	}
+
+	.phones__img {
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0;
+		transform: none;
+	}
+
+	.tablet__img {
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0;
+		transform: none;
+	}
+
+	.watch__img {
+		top: auto;
+		bottom: 0;
+		left: auto;
+		right: 0;
+		transform: none;
+	}
+
+	.categories__card-title {
+		font-size: 22px;
+	}
+
+	.categories__card-label {
+		font-size: 13px;
+	}
+
+	.categories__card-info--left,
+	.categories__card-info--left-bottom,
+	.categories__card-info--center,
+	.categories__card-info--right {
+		top: 24px;
+		bottom: auto;
+		left: 24px;
+		right: auto;
+		transform: none;
+		text-align: left;
+		width: auto;
+	}
+
+	.categories__card:hover {
+		transform: none;
+	}
+}
