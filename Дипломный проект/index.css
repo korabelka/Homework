@@ -1,0 +1,16 @@
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/global.css";
+
+@import "./block/header.css";
+@import "./block/searchModal.css";
+@import "./block/burger.css";
+@import "./block/hero.css";
+@import "./block/categories.css";
+@import "./block/bestsellers.css";
+@import "./block/explore.css";
+@import "./block/ideas.css";
+@import "./block/search.css";
+@import "./block/newsletter.css";
+@import "./block/footer.css";

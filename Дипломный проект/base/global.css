@@ -1,0 +1,35 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--primary-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 98px;
+  scrollbar-gutter: stable;
+}
+
+.page__body {
+  min-width: 375px;
+  background: #fff;
+}
+
+.page__body--no-scroll {
+  overflow-y: hidden;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+.text {
+  line-height: 120%;
+  font-weight: 400;
+  color: #000;
+}
+
+.text-little {
+  font-size: 14px;
+}
+
+.text-big {
+  font-size: 16px;
+}

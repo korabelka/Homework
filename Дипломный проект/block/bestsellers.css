@@ -1,0 +1,70 @@
+.bestsellers {
+	padding-top: 60px;
+	margin-bottom: 74px;
+}
+
+.bestsellers__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.bestsellers__title {
+	font-family: var(--second-family);
+	font-size: 42px;
+	font-weight: 400;
+	margin-bottom: 9px;
+}
+
+.bestsellers__subtitle {
+	font-family: var(--second-family);
+	font-size: 13px;
+	font-weight: 400;
+	margin-bottom: 56px;
+}
+
+.bestsellers__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 28px;
+}
+
+.bestsellers__card {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
+.bestsellers__card-image {
+	width: 100%;
+	max-width: 303px;
+	height: 270px;
+	margin: 0 auto 5px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bestsellers__card-name {
+	font-family: var(--second-family);
+	font-size: 22px;
+	font-weight: 400;
+	margin-bottom: 9px;
+	line-height: 125%;
+}
+
+.bestsellers__card-desc {
+	font-size: 14px;
+	color: #4b4b4b;
+	line-height: 120%;
+	margin-bottom: 25px;
+	margin-top: auto;
+}
+
+.bestsellers__card-price {
+	font-size: 18px;
+	font-weight: 400;
+}
